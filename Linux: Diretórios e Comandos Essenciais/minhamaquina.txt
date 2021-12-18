@@ -1,0 +1,370 @@
+---INFORMAÇÕES DE HADWARE---
+
+dzpc
+    descrição: Computer
+    largura: 64 bits
+    capacidades: smp vsyscall32
+  *-core
+       descrição: Motherboard
+       ID físico: 0
+     *-memory
+          descrição: Memória do sistema
+          ID físico: 0
+          tamanho: 4GiB
+     *-cpu
+          produto: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+          fabricante: Intel Corp.
+          ID físico: 1
+          informações do barramento: cpu@0
+          tamanho: 2417MHz
+          capacidade: 3100MHz
+          largura: 64 bits
+          capacidades: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d cpufreq
+     *-pci
+          descrição: Host bridge
+          produto: Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers
+          fabricante: Intel Corporation
+          ID físico: 100
+          informações do barramento: pci@0000:00:00.0
+          versão: 02
+          largura: 32 bits
+          clock: 33MHz
+          configuração: driver=skl_uncore
+          recursos: irq:0
+        *-display
+             descrição: VGA compatible controller
+             produto: HD Graphics 620
+             fabricante: Intel Corporation
+             ID físico: 2
+             informações do barramento: pci@0000:00:02.0
+             versão: 02
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: vga_controller bus_master cap_list rom
+             configuração: driver=i915 latency=0
+             recursos: irq:127 memória:d0000000-d0ffffff memória:c0000000-cfffffff porta de E/S:f000(tamanho=64) memória:c0000-dffff
+        *-usb
+             descrição: USB controller
+             produto: Sunrise Point-LP USB 3.0 xHCI Controller
+             fabricante: Intel Corporation
+             ID físico: 14
+             informações do barramento: pci@0000:00:14.0
+             versão: 21
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: xhci bus_master cap_list
+             configuração: driver=xhci_hcd latency=0
+             recursos: irq:124 memória:d1210000-d121ffff
+        *-generic:0
+             descrição: Signal processing controller
+             produto: Sunrise Point-LP Thermal subsystem
+             fabricante: Intel Corporation
+             ID físico: 14.2
+             informações do barramento: pci@0000:00:14.2
+             versão: 21
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: cap_list
+             configuração: driver=intel_pch_thermal latency=0
+             recursos: irq:18 memória:d1230000-d1230fff
+        *-generic:1
+             descrição: Signal processing controller
+             produto: Sunrise Point-LP Serial IO I2C Controller #0
+             fabricante: Intel Corporation
+             ID físico: 15
+             informações do barramento: pci@0000:00:15.0
+             versão: 21
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: bus_master cap_list
+             configuração: driver=intel-lpss latency=0
+             recursos: irq:16 memória:d122f000-d122ffff
+        *-generic:2
+             descrição: Signal processing controller
+             produto: Sunrise Point-LP Serial IO I2C Controller #1
+             fabricante: Intel Corporation
+             ID físico: 15.1
+             informações do barramento: pci@0000:00:15.1
+             versão: 21
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: bus_master cap_list
+             configuração: driver=intel-lpss latency=0
+             recursos: irq:17 memória:d122e000-d122efff
+        *-communication
+             descrição: Communication controller
+             produto: Sunrise Point-LP CSME HECI #1
+             fabricante: Intel Corporation
+             ID físico: 16
+             informações do barramento: pci@0000:00:16.0
+             versão: 21
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: bus_master cap_list
+             configuração: driver=mei_me latency=0
+             recursos: irq:128 memória:d122d000-d122dfff
+        *-sata
+             descrição: SATA controller
+             produto: Sunrise Point-LP SATA Controller [AHCI mode]
+             fabricante: Intel Corporation
+             ID físico: 17
+             informações do barramento: pci@0000:00:17.0
+             versão: 21
+             largura: 32 bits
+             clock: 66MHz
+             capacidades: sata ahci_1.0 bus_master cap_list
+             configuração: driver=ahci latency=0
+             recursos: irq:125 memória:d1228000-d1229fff memória:d122c000-d122c0ff porta de E/S:f090(tamanho=8) porta de E/S:f080(tamanho=4) porta de E/S:f060(tamanho=32) memória:d122b000-d122b7ff
+        *-pci:0
+             descrição: PCI bridge
+             produto: Sunrise Point-LP PCI Express Root Port #5
+             fabricante: Intel Corporation
+             ID físico: 1c
+             informações do barramento: pci@0000:00:1c.0
+             versão: f1
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:122 memória:d1100000-d11fffff
+           *-network
+                descrição: Interface sem fio
+                produto: QCA9565 / AR9565 Wireless Network Adapter
+                fabricante: Qualcomm Atheros
+                ID físico: 0
+                informações do barramento: pci@0000:01:00.0
+                nome lógico: wlp1s0
+                versão: 01
+                serial: 9c:30:5b:f9:f0:a7
+                largura: 64 bits
+                clock: 33MHz
+                capacidades: bus_master cap_list rom ethernet physical wireless
+                configuração: broadcast=yes driver=ath9k driverversion=5.4.0-91-generic firmware=N/A ip=192.168.1.68 latency=0 link=yes multicast=yes wireless=IEEE 802.11
+                recursos: irq:16 memória:d1100000-d117ffff memória:d1180000-d118ffff
+        *-pci:1
+             descrição: PCI bridge
+             produto: Sunrise Point-LP PCI Express Root Port #6
+             fabricante: Intel Corporation
+             ID físico: 1c.5
+             informações do barramento: pci@0000:00:1c.5
+             versão: f1
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:123 porta de E/S:e000(tamanho=4096) memória:d1000000-d10fffff
+           *-network
+                descrição: Ethernet interface
+                produto: RTL810xE PCI Express Fast Ethernet controller
+                fabricante: Realtek Semiconductor Co., Ltd.
+                ID físico: 0
+                informações do barramento: pci@0000:02:00.0
+                nome lógico: enp2s0
+                versão: 07
+                serial: d0:94:66:a5:a4:84
+                capacidade: 100Mbit/s
+                largura: 64 bits
+                clock: 33MHz
+                capacidades: bus_master cap_list ethernet physical tp mii 10bt 10bt-fd 100bt 100bt-fd autonegotiation
+                configuração: autonegotiation=on broadcast=yes driver=r8169 firmware=rtl8106e-1_0.0.1 06/29/12 latency=0 link=no multicast=yes port=MII
+                recursos: irq:17 porta de E/S:e000(tamanho=256) memória:d1004000-d1004fff memória:d1000000-d1003fff
+        *-isa
+             descrição: ISA bridge
+             produto: Sunrise Point-LP LPC Controller
+             fabricante: Intel Corporation
+             ID físico: 1f
+             informações do barramento: pci@0000:00:1f.0
+             versão: 21
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: isa bus_master
+             configuração: latency=0
+        *-memory DISPONÍVEL
+             descrição: Memory controller
+             produto: Sunrise Point-LP PMC
+             fabricante: Intel Corporation
+             ID físico: 1f.2
+             informações do barramento: pci@0000:00:1f.2
+             versão: 21
+             largura: 32 bits
+             clock: 33MHz (30.3ns)
+             configuração: latency=0
+             recursos: memória:d1224000-d1227fff
+        *-multimedia
+             descrição: Audio device
+             produto: Sunrise Point-LP HD Audio
+             fabricante: Intel Corporation
+             ID físico: 1f.3
+             informações do barramento: pci@0000:00:1f.3
+             versão: 21
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: bus_master cap_list
+             configuração: driver=snd_hda_intel latency=32
+             recursos: irq:129 memória:d1220000-d1223fff memória:d1200000-d120ffff
+        *-serial
+             descrição: SMBus
+             produto: Sunrise Point-LP SMBus
+             fabricante: Intel Corporation
+             ID físico: 1f.4
+             informações do barramento: pci@0000:00:1f.4
+             versão: 21
+             largura: 64 bits
+             clock: 33MHz
+             configuração: driver=i801_smbus latency=0
+             recursos: irq:16 memória:d122a000-d122a0ff porta de E/S:f040(tamanho=32)
+     *-pnp00:00
+          produto: PnP device PNP0c02
+          ID físico: 2
+          capacidades: pnp
+          configuração: driver=system
+     *-pnp00:01
+          produto: PnP device PNP0b00
+          ID físico: 3
+          capacidades: pnp
+          configuração: driver=rtc_cmos
+     *-pnp00:02
+          produto: PnP device INT3f0d
+          fabricante: Interphase Corporation
+          ID físico: 4
+          capacidades: pnp
+          configuração: driver=system
+     *-pnp00:03
+          produto: PnP device PNP0303
+          ID físico: 5
+          capacidades: pnp
+          configuração: driver=i8042 kbd
+     *-pnp00:04
+          produto: PnP device DLL07de
+          fabricante: Dell Inc
+          ID físico: 6
+          capacidades: pnp
+          configuração: driver=i8042 aux
+     *-pnp00:05
+          produto: PnP device PNP0c02
+          ID físico: 7
+          capacidades: pnp
+          configuração: driver=system
+     *-pnp00:06
+          produto: PnP device PNP0c02
+          ID físico: 8
+          capacidades: pnp
+          configuração: driver=system
+     *-pnp00:07
+          produto: PnP device PNP0c02
+          ID físico: 9
+          capacidades: pnp
+          configuração: driver=system
+     *-pnp00:08
+          produto: PnP device PNP0c02
+          ID físico: a
+          capacidades: pnp
+          configuração: driver=system
+
+---INFORMAÇÕES DE MEMÓRIA---
+
+              total       usada       livre    compart.  buff/cache  disponível
+Mem.:       3906056     2391544      170656      184924     1343856     1037452
+Swap:       8138748      460288     7678460
+
+---INFORMAÇÕES DE PLACAS PCI---
+
+00:00.0 Host bridge: Intel Corporation Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers (rev 02)
+00:02.0 VGA compatible controller: Intel Corporation HD Graphics 620 (rev 02)
+00:14.0 USB controller: Intel Corporation Sunrise Point-LP USB 3.0 xHCI Controller (rev 21)
+00:14.2 Signal processing controller: Intel Corporation Sunrise Point-LP Thermal subsystem (rev 21)
+00:15.0 Signal processing controller: Intel Corporation Sunrise Point-LP Serial IO I2C Controller #0 (rev 21)
+00:15.1 Signal processing controller: Intel Corporation Sunrise Point-LP Serial IO I2C Controller #1 (rev 21)
+00:16.0 Communication controller: Intel Corporation Sunrise Point-LP CSME HECI #1 (rev 21)
+00:17.0 SATA controller: Intel Corporation Sunrise Point-LP SATA Controller [AHCI mode] (rev 21)
+00:1c.0 PCI bridge: Intel Corporation Sunrise Point-LP PCI Express Root Port #5 (rev f1)
+00:1c.5 PCI bridge: Intel Corporation Sunrise Point-LP PCI Express Root Port #6 (rev f1)
+00:1f.0 ISA bridge: Intel Corporation Sunrise Point-LP LPC Controller (rev 21)
+00:1f.2 Memory controller: Intel Corporation Sunrise Point-LP PMC (rev 21)
+00:1f.3 Audio device: Intel Corporation Sunrise Point-LP HD Audio (rev 21)
+00:1f.4 SMBus: Intel Corporation Sunrise Point-LP SMBus (rev 21)
+01:00.0 Network controller: Qualcomm Atheros QCA9565 / AR9565 Wireless Network Adapter (rev 01)
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL810xE PCI Express Fast Ethernet controller (rev 07)
+
+---INFORMAÇÕES DE DISPOSITIVOS USB---
+
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 005: ID 0cf3:e005 Qualcomm Atheros Communications 
+Bus 001 Device 003: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 002: ID 0bda:5684 Realtek Semiconductor Corp. Integrated_Webcam_HD
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+---INFORMAÇÕES DE CPU (PROCESSADOR)---
+
+Arquitetura:                     x86_64
+Modo(s) operacional da CPU:      32-bit, 64-bit
+Ordem dos bytes:                 Little Endian
+Address sizes:                   39 bits physical, 48 bits virtual
+CPU(s):                          4
+Lista de CPU(s) on-line:         0-3
+Thread(s) per núcleo:            2
+Núcleo(s) por soquete:           2
+Soquete(s):                      1
+Nó(s) de NUMA:                   1
+ID de fornecedor:                GenuineIntel
+Família da CPU:                  6
+Modelo:                          142
+Nome do modelo:                  Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+Step:                            9
+CPU MHz:                         800.003
+CPU MHz máx.:                    3100,0000
+CPU MHz mín.:                    400,0000
+BogoMIPS:                        5399.81
+Virtualização:                   VT-x
+cache de L1d:                    64 KiB
+cache de L1i:                    64 KiB
+cache de L2:                     512 KiB
+cache de L3:                     3 MiB
+CPU(s) de nó0 NUMA:              0-3
+Vulnerability Itlb multihit:     KVM: Mitigation: Split huge pages
+Vulnerability L1tf:              Mitigation; PTE Inversion; VMX conditional cache flushes, SMT vulnerable
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBPB conditional, IBRS_FW, STIBP conditional, RSB filling
+Vulnerability Srbds:             Mitigation; Microcode
+Vulnerability Tsx async abort:   Not affected
+Opções:                          fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+
+---INFORMAÇÕES SOBRE O KERNEL---
+
+Linux
+VERSÃO DO KERNEL: 
+5.4.0-91-generic
+Arquitetura DO KERNEL: 
+x86_64
+
+---Histórico de Comandos---
+
+ 1259  echo -e "---INFORMAÇÕES DE HADWARE---\n" > minhamaquina.txt
+ 1260  lshw | more
+ 1261  lshw >> minhamaquina.txt
+ 1262  cat minhamaquina.txt
+ 1263  echo -e "\n---INFORMAÇÕES DE MEMÓRIA---\n" >> minhamaquina.txt
+ 1264  free >> minhamaquina.txt 
+ 1265  ls pci
+ 1266  lspci
+ 1267  echo -e "\n---INFORMAÇÕES DE PLACAS PCI---\n" >> minhamaquina.txt
+ 1268  lspci >> minhamaquina.txt
+ 1269  lsusb
+ 1270  echo -e "\n---INFORMAÇÕES DE DISPOSITIVOS USB---\n" >> minhamaquina.txt
+ 1271  lsusb >> minhamaquina.txt
+ 1272  lscpu
+ 1273  echo -e "\n---INFORMAÇÕES DE CPU (PROCESSADOR)---\n" >> minhamaquina.txt
+ 1274  lscpu >> minhamaquina.txt
+ 1275  uname
+ 1276  echo -e "\n---INFORMAÇÕES SOBRE O KERNEL---\n" >> minhamaquina.txt
+ 1277  uname >> minhamaquina.txt 
+ 1278  echo "VERSÃO DO KERNEL: " >> minhamaquina.txt
+ 1279  uname -r >> minhamaquina.txt 
+ 1280  uname -m
+ 1281  echo "Arquitetura DO KERNEL: " >> minhamaquina.txt
+ 1282  arch >> minhamaquina.txt 
+ 1283  cat minhamaquina.txt | more
+ 1284  history >> minhamaquina.txt
